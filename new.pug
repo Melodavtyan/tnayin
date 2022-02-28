@@ -1,0 +1,16 @@
+html 
+  head 
+    title ADDING PAGE 
+    link(rel="stylesheet" href="../style.css")  
+    script(src="getcont.js") 
+  body 
+    h1.vern ADD NEW CONTACT 
+    
+    form(method="post" id="form")
+      .formpart1 
+        label name 
+        input(type="text" name="name" placeholder="ENTER name " id="name") 
+      .formpart2 
+        label Phone number 
+        input(type="text" name="phonenumber" placeholder="+374 (**) **-**-**" id="phonenumber")
+        input.btn(type="submit" value="ADD")

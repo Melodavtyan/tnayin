@@ -1,0 +1,21 @@
+html 
+  head
+    title HOME
+    link(rel="stylesheet" href="../style.css") 
+ 
+  body 
+    div.container 
+      h1 CONTACTS 
+
+    .contact 
+      .contactparts= name
+      .contactparts= phonenumber  
+      .contactparts 
+        form(method="post" action="/contacts/new")
+          input.btnedit(type="submit", value="Edit" ) 
+        form(method="get" action="/")
+          input.btndel(type="submit", value="Delete") 
+
+    
+    .add 
+      a(href="/contacts/new") ADD CONTACT  
